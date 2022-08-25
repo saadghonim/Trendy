@@ -1,0 +1,209 @@
+.new_section {
+  overflow: hidden;
+}
+.new {
+  position: relative;
+}
+.new_section.most_section {
+  margin-bottom: 150px;
+}
+.swiper-button-next i,
+.swiper-button-prev i {
+  font-size: 20px;
+  transition: 0.5s;
+  color: $black_color;
+  &:hover {
+    color: $color_4;
+  }
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -50px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: -50px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 36%;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
+}
+
+@include xs {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: block;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -40px;
+  }
+  .swiper-button-next i,
+  .swiper-button-prev i {
+    display: none;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $color_4;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+.new_section {
+  margin-bottom: 70px;
+}
+.item_service {
+  text-align: center;
+  .img_service {
+    position: relative;
+    .lables {
+      position: absolute;
+      top: 5px;
+      inset-inline-start: 5px;
+    }
+    .anc_item_service {
+      figure {
+        overflow: hidden;
+        margin-bottom: 10px;
+        img {
+          transition: 0.5s;
+          max-width: 100%;
+        }
+      }
+      &:hover {
+        .services_name {
+          color: $color_4;
+        }
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .services_name {
+        transition: 0.5s;
+        font-size: 14px;
+        line-height: 20px;
+        color: black;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .lables {
+    z-index: 11;
+    display: flex;
+
+    .lable_off {
+      font-size: 12px;
+      color: $color_1;
+      font-weight: 700;
+      text-align: center;
+      width: 64px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: #f42424;
+      margin-inline-end: 5px;
+    }
+    .lable_new {
+      font-size: 12px;
+      color: $color_1;
+      font-weight: 700;
+      text-align: center;
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: #21ac31;
+    }
+  }
+  .price {
+    margin-bottom: 15px;
+    .after_off {
+      font-size: 15px;
+      color: $color_4;
+      font-weight: 700;
+      margin-inline-end: 5px;
+    }
+    .before_off {
+      font-size: 15px;
+      text-decoration: line-through;
+      color: #505050;
+      font-weight: 300;
+    }
+  }
+}
+.add_fav_cart {
+  @include flex-var(flex, center, center);
+  .add_cart {
+    max-width: 198px;
+    padding: 0 35px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: $color_2;
+    font-size: 14px;
+    color: $color_4;
+    text-align: center;
+    margin-inline-end: 5px;
+    @include flex-var(flex, center, center);
+    &:hover {
+      background-color: $color_3;
+      color: $color_1;
+    }
+    i {
+      font-size: 24px;
+    }
+  }
+  .add_fav {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #c89676;
+    color: #855333;
+    font-size: 24px;
+    text-align: center;
+    @include flex-var(flex, center, center);
+    &:hover {
+      background-color: $color_3;
+      color: $color_1;
+    }
+  }
+}
+@include xs {
+  .new_section {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  .new_section.most_section {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  .add_fav_cart {
+    .add_cart {
+      max-width: 198px;
+      padding: 0 8px;
+      height: 30px;
+      margin-inline-end: 3px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+    .add_fav {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+    }
+  }
+}

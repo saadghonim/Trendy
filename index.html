@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Trendy | Home</title>
+  </head>
+  <body>
+    <!-- preload progress -->
+    <div class="progress_preload">
+      <div class="progress" id="progress_div">
+        <div class="bar" id="bar1"></div>
+        <input type="hidden" id="progress_width" value="0" />
+      </div>
+    </div>
+
+    <div class="moboverlay"></div>
+    <div class="search_mob">
+      <button class="btn_close_search btn_gh">
+        <i class="las la-times"></i>
+      </button>
+      <div class="input_div">
+        <button class="btn_search btn_gh">
+          <i class="las la-search"></i>
+        </button>
+        <input type="text" placeholder="ابحث باسم المنتج او الماركة" />
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~start header~~~~~~~~~~~~~~~~~~~~~ -->
+    <header>
+      <div class="header-top-parant">
+        <div class="container">
+          <div class="header-top">
+            <p class="m_P_gh">هلا بيكي بمتجر ترندي ستور</p>
+            <a href="en.html" class="anc_lang anc_gh">English</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div class="input_div_parant icon_mobile">
+            <div class="icons-mobile">
+              <button class="btn_bars btn_gh">
+                <i class="las la-bars"></i>
+              </button>
+              <button class="btn_search-mobile btn_gh">
+                <i class="las la-search"></i>
+              </button>
+            </div>
+            <div class="input_div">
+              <button class="btn_search btn_gh">
+                <i class="las la-search"></i>
+              </button>
+              <input type="text" placeholder="ابحث باسم المنتج او الماركة" />
+            </div>
+          </div>
+          <div class="logo">
+            <a href="index.html" class="anc_logo">
+              <figure>
+                <img src="images/logo.png" alt="logo" />
+              </figure>
+            </a>
+          </div>
+          <div class="user_group">
+            <div class="user">
+              <div class="div_user user_item btn_sho-sear">
+                <div class="hover_drop">
+                  <i class="la la-user"></i>
+
+                  <p class="m_P_gh">حسابي</p>
+                </div>
+                <ul class="ul_gh drop_user">
+                  <li><a href="#" class="anc_user anc_gh">تسجيل دخول</a></li>
+                  <li><a href="#" class="anc_user anc_gh">تسجيل جديد</a></li>
+                </ul>
+              </div>
+            </div>
+            <button class="wishes btn_gh user_item">
+              <i class="lar la-heart"></i>
+              <p class="m_P_gh">رغباتي</p>
+              <div class="number-cart">
+                (
+                <span>0</span>
+                )
+              </div>
+            </button>
+            <button class="cart btn_gh user_item">
+              <i class="las la-shopping-cart"></i>
+              <p class="m_P_gh">السلة</p>
+              <div class="number-cart">
+                (
+                <span>0</span>
+                )
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav>
+          <button class="btn_close_nav btn_gh">
+            <i class="las la-times"></i>
+          </button>
+          <ul class="ul_nav ul_gh">
+            <li><a href="#" class="anc_nav anc_gh">العروض </a></li>
+            <li><a href="#" class="anc_nav anc_gh">وصل حديثا</a></li>
+            <li><a href="#" class="anc_nav anc_gh">الأكثر مبيعا</a></li>
+            <li><a href="#" class="anc_nav anc_gh">جلابيات</a></li>
+            <li><a href="#" class="anc_nav anc_gh">عبايات كاجوال</a></li>
+            <li><a href="#" class="anc_nav anc_gh">فساتين نسائيه</a></li>
+            <li>
+              <a href="en.html" class="anc_nav anc_lang_nav anc_gh">English </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~start banner~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="banner_parant">
+      <div class="container">
+        <div class="banner">
+          <a href="#" class="anc_banner anim_">
+            <figure><img src="images/banner.jpg" alt="banner" /></figure>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~end banner~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~start category~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="category_section">
+      <div class="container">
+        <div class="category">
+          <div class="item_category">
+            <a href="#" class="anc_category">
+              <figure>
+                <img src="images/category1.jpg" alt="" />
+              </figure>
+              <h4 class="category_name">جلابيات</h4>
+            </a>
+          </div>
+          <div class="item_category">
+            <a href="#" class="anc_category">
+              <figure>
+                <img src="images/category2.jpg" alt="" />
+              </figure>
+              <h4 class="category_name">عبايات كاجوال</h4>
+            </a>
+          </div>
+          <div class="item_category">
+            <a href="#" class="anc_category">
+              <figure>
+                <img src="images/category3.jpg" alt="" />
+              </figure>
+              <h4 class="category_name">فساتين نسائية</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~end category~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~start banner~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="banner_parant">
+      <div class="container">
+        <div class="banner banner2">
+          <a href="#" class="anc_banner">
+            <figure><img src="images/banner1.jpg" alt="banner" /></figure>
+          </a>
+          <a href="#" class="anc_banner">
+            <figure><img src="images/banner2.jpg" alt="banner" /></figure>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~end banner~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~start new~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="new_section">
+      <div class="container">
+        <div class="title_group">
+          <h2 class="title-section">وصل حديثًا</h2>
+          <a href="#" class="anc_view_all anc_gh">تسوقي المزيد</a>
+        </div>
+        <div class="new new_">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new1.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new2.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new3.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new4.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new3.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new4.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <i class="las la-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="las la-angle-left"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end new~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~start banner~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="banner_parant">
+      <div class="container">
+        <div class="banner">
+          <a href="#" class="anc_banner anim_">
+            <figure><img src="images/banner3.jpg" alt="banner" /></figure>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~end banner~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~start new~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="new_section most_section">
+      <div class="container">
+        <div class="title_group">
+          <h2 class="title-section">الأكثر مشاهدة</h2>
+        </div>
+        <div class="new">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new1.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new2.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new3.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new4.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new3.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item_service">
+                  <div class="img_service">
+                    <div class="lables">
+                      <span class="lable_off">خصم 20%</span>
+                      <span class="lable_new">جديد</span>
+                    </div>
+                    <a href="#" class="anc_item_service anc_gh">
+                      <figure>
+                        <img src="images/new4.jpg" alt="" />
+                      </figure>
+                      <h3 class="services_name m_P_gh">
+                        عباية سهيلة كاجوال باللون الأسود
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="price">
+                    <span class="after_off">599 ر.س</span>
+                    <span class="before_off">748 ر.س</span>
+                  </div>
+                  <div class="add_fav_cart">
+                    <button class="add_cart btn_gh">
+                      <i class="las la-shopping-cart"></i>
+                      اضافة إلى السلة
+                    </button>
+                    <button class="add_fav btn_gh">
+                      <i class="lar la-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <i class="las la-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="las la-angle-left"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end new~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~start testimonials~~~~~~~~~~~~~~~~~~ -->
+    <section class="testimonials_section">
+      <div class="container">
+        <div class="testimonials">
+          <h3 class="title_testimonials m_P_gh">آراء العملاء</h3>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial_item">
+                  <img src="images/icon.png" class="img_icon" alt="" />
+                  <h4 class="testimonial_name">ماجدة العتيبي</h4>
+                  <div class="starts">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="testimonial_p">
+                    خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+                    بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل
+                    الميلاد
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial_item">
+                  <img src="images/icon.png" class="img_icon" alt="" />
+                  <h4 class="testimonial_name">ماجدة العتيبي</h4>
+                  <div class="starts">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="testimonial_p">
+                    خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+                    بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل
+                    الميلاد
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial_item">
+                  <img src="images/icon.png" class="img_icon" alt="" />
+                  <h4 class="testimonial_name">ماجدة العتيبي</h4>
+                  <div class="starts">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="testimonial_p">
+                    خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+                    بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل
+                    الميلاد
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial_item">
+                  <img src="images/icon.png" class="img_icon" alt="" />
+                  <h4 class="testimonial_name">ماجدة العتيبي</h4>
+                  <div class="starts">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p class="testimonial_p">
+                    خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً،
+                    بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل
+                    الميلاد
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <i class="las la-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="las la-angle-left"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~end testimonials~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~start footer~~~~~~~~~~~~~~~~~~~~~ -->
+    <footer>
+      <div class="newsletter_parant">
+        <div class="container">
+          <div class="newsletter">
+            <div class="title_div_n">
+              <h3 class="m_P_gh newsletter_title">
+                اشترك في النشرة البريدية ليصلك جديد منتجاتنا وعروضنا
+              </h3>
+            </div>
+            <div class="input_newsletter">
+              <input type="text" placeholder="ادخل بريدك الالكتروني" />
+              <button class="btn_gh btn_newsletter">اشتراك</button>
+            </div>
+            <div class="social_media_div">
+              <ul class="social_media ul_gh">
+                <li>
+                  <a href="#" class="anc_social anc_gh"
+                    ><i class="lab la-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="anc_social anc_gh"
+                    ><i class="lab la-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="anc_social anc_gh"
+                    ><i class="lab la-whatsapp"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="anc_social anc_gh"
+                    ><i class="lab la-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="logo_f">
+                <div class="logo_f">
+                  <a href="#" class="anc_logo_f anc_gh">
+                    <figure>
+                      <img src="images/logof.png" alt="" />
+                    </figure>
+                  </a>
+                  <div class="maroof-vat">
+                    <a href="#" class="anc_maroof anc_gh"
+                      ><figure><img src="images/maroof.png" alt="" /></figure
+                    ></a>
+                    <a href="#" class="anc_vat anc_gh"
+                      ><figure><img src="images/vat.png" alt="" /></figure
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="f_div">
+                <div
+                  class="btn_gh f_btn"
+                  role="button"
+                  data-toggle="collapse"
+                  data-target="#ac"
+                >
+                  ابرز الماركات
+                </div>
+                <ul id="ac" class="ul_list ul_gh collapse">
+                  <li><a href="#" class="anc_gh">غوتشي </a></li>
+                  <li><a href="#" class="anc_gh"> دولتشي اند غابانا </a></li>
+                  <li><a href="#" class="anc_gh"> فالنتينو</a></li>
+                  <li><a href="#" class="anc_gh">سان لوران</a></li>
+                  <li><a href="#" class="anc_gh">بالنسياغا </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="f_div">
+                <div
+                  class="btn_gh f_btn"
+                  role="button"
+                  data-toggle="collapse"
+                  data-target="#acd"
+                >
+                  أبرز الفئات
+                </div>
+                <ul id="acd" class="ul_list ul_gh collapse">
+                  <li><a href="#" class="anc_gh"> جلابيات </a></li>
+                  <li><a href="#" class="anc_gh"> عبايات كاجوال </a></li>
+                  <li><a href="#" class="anc_gh"> فساتين نسائية </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="f_div">
+                <div
+                  class="btn_gh f_btn"
+                  role="button"
+                  data-toggle="collapse"
+                  data-target="#acf"
+                >
+                  معلومات
+                </div>
+                <ul id="acf" class="ul_list ul_gh collapse">
+                  <li><a href="#" class="anc_gh"> من نحن</a></li>
+                  <li><a href="#" class="anc_gh">الشروط والأحكام </a></li>
+                  <li><a href="#" class="anc_gh"> سياسة الخصوصية</a></li>
+                  <li><a href="#" class="anc_gh">الشحن والتوصيل </a></li>
+                  <li><a href="#" class="anc_gh"> المرتجعات</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="f_div">
+                <div
+                  class="btn_gh f_btn"
+                  role="button"
+                  data-toggle="collapse"
+                  data-target="#ace"
+                >
+                  خدمة العملاء
+                </div>
+                <ul id="ace" class="ul_list ul_gh collapse">
+                  <li><a href="#" class="anc_gh"> تواصل معنا</a></li>
+                  <li><a href="#" class="anc_gh"> الأسئلة المتكررة </a></li>
+                  <li><a href="#" class="anc_gh"> تتبع الطلب</a></li>
+                  <li><a href="#" class="anc_gh"> دخول التجار</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <p class="m_P_gh copyright_trendy">متجر تريندي ستور 2022 ©</p>
+          <figure>
+            <img src="images/payment.png" alt="" />
+          </figure>
+          <p class="m_P_gh copyright_tasawk">
+            صنع في
+            <a href="https://tasawk.com.sa/" class="anc_gh">
+              <img src="images/tasawk.png" alt="" />
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~end footer~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <button class="btn_gh back_top"></button>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

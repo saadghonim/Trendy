@@ -1,0 +1,77 @@
+.banner {
+  margin-bottom: 30px;
+}
+
+.anc_banner {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: 0.5s;
+  img {
+    max-width: 100%;
+  }
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(transparent),
+        color-stop(rgba(255, 255, 255, 0.4)),
+        to(transparent)
+      );
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      );
+      animation: ShineAnim 5s ease;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      -webkit-animation: ShineAnim 5s ease;
+    }
+  }
+}
+@-webkit-keyframes ShineAnim {
+  0% {
+    left: -100%;
+  }
+  10% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes ShineAnim {
+  0% {
+    left: -100%;
+  }
+  10% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.banner2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+@include xs {
+  .banner2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+}
