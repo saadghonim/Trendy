@@ -148,7 +148,7 @@ img {
 .progress .bar {
   background: #a9583f;
   width: 0%;
-  height: 5px;
+  height: 16px;
 }
 
 .percent {
