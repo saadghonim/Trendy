@@ -193,4 +193,22 @@ if ($(window).width() > 768) {
   }),
     document.documentElement.style.setProperty("--animate-duration", ".5s");
   // ~~~~~~~~~~~~~~~
+} else {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 150) {
+      $("header").addClass("fixed_");
+    } else {
+      $("header").removeClass("fixed_");
+    }
+  });
+  var fixedBar = document.querySelector("header"),
+    prevScrollpos = $(window).scrollTop();
+  (window.onscroll = function () {
+    var o = $(window).scrollTop();
+    prevScrollpos < o && prevScrollpos > 0
+      ? fixedBar.classList.add("fixsedt")
+      : fixedBar.classList.remove("fixsedt"),
+      (prevScrollpos = o);
+  }),
+    document.documentElement.style.setProperty("--animate-duration", ".5s");
 }

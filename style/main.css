@@ -1064,11 +1064,8 @@ nav .ul_nav .anc_nav:hover {
   .logo img {
     width: 150px;
   }
-  .header {
-    padding: 20px 0;
-  }
   nav {
-    position: absolute;
+    position: fixed;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: #fbd7bf;
@@ -1098,6 +1095,18 @@ nav .ul_nav .anc_nav:hover {
   }
   .search_mob .input_div input {
     height: 40px;
+  }
+  .header {
+    padding: 20px 0;
+  }
+  header.fixed_ {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header.fixed_ .header {
+    padding: 10px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 
