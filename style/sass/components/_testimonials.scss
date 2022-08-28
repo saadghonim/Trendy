@@ -39,11 +39,19 @@
       font-weight: 900;
       color: $color_4;
       font-size: 12px;
-      letter-spacing: 2px;
     }
-    &:last-child {
-      &:after {
-        color: $color_3;
+    @include ar {
+      &:first-child {
+        &:after {
+          color: $color_3;
+        }
+      }
+    }
+    @include en {
+      &:last-child {
+        &:after {
+          color: $color_3;
+        }
       }
     }
   }
@@ -63,5 +71,14 @@
   .testimonial_p {
     width: auto;
     height: auto;
+  }
+  .testimonials_section {
+    margin-bottom: 50px;
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 10px;
+    }
+  }
+  .testimonials {
+    padding-bottom: 50px;
   }
 }

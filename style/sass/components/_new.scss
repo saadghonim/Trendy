@@ -105,26 +105,23 @@
   .lables {
     z-index: 11;
     display: flex;
-
-    .lable_off {
-      font-size: 12px;
+    .lable_off,
+    .lable_new {
+      font-size: 10px;
       color: $color_1;
       font-weight: 700;
-      text-align: center;
+      border-radius: 10px;
+      line-height: 1.9;
+    }
+    .lable_off {
       width: 64px;
       height: 20px;
-      border-radius: 10px;
       background-color: #f42424;
       margin-inline-end: 5px;
     }
     .lable_new {
-      font-size: 12px;
-      color: $color_1;
-      font-weight: 700;
-      text-align: center;
       width: 40px;
       height: 20px;
-      border-radius: 10px;
       background-color: #21ac31;
     }
   }
@@ -135,6 +132,7 @@
       color: $color_4;
       font-weight: 700;
       margin-inline-end: 5px;
+      text-align: center;
     }
     .before_off {
       font-size: 15px;

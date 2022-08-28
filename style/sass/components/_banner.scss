@@ -5,7 +5,7 @@
 .anc_banner {
   position: relative;
   overflow: hidden;
-  display: inline-block;
+  display: block;
   transition: 0.5s;
   img {
     max-width: 100%;
@@ -73,5 +73,8 @@
   .banner2 {
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
+  }
+  .banner {
+    margin-bottom: 15px;
   }
 }

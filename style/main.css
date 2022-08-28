@@ -276,7 +276,7 @@ img {
 .anc_banner {
   position: relative;
   overflow: hidden;
-  display: inline-block;
+  display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -340,6 +340,9 @@ img {
         grid-template-columns: repeat(1, 1fr);
     gap: 15px;
   }
+  .banner {
+    margin-bottom: 15px;
+  }
 }
 
 .category {
@@ -391,6 +394,7 @@ img {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 15px;
+    margin-bottom: 15px;
   }
   .category figure {
     text-align: center;
@@ -526,27 +530,26 @@ img {
   display: flex;
 }
 
-.item_service .lables .lable_off {
-  font-size: 12px;
+.item_service .lables .lable_off,
+.item_service .lables .lable_new {
+  font-size: 10px;
   color: #ffffff;
   font-weight: 700;
-  text-align: center;
+  border-radius: 10px;
+  line-height: 1.9;
+}
+
+.item_service .lables .lable_off {
   width: 64px;
   height: 20px;
-  border-radius: 10px;
   background-color: #f42424;
   -webkit-margin-end: 5px;
           margin-inline-end: 5px;
 }
 
 .item_service .lables .lable_new {
-  font-size: 12px;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
   width: 40px;
   height: 20px;
-  border-radius: 10px;
   background-color: #21ac31;
 }
 
@@ -560,6 +563,7 @@ img {
   font-weight: 700;
   -webkit-margin-end: 5px;
           margin-inline-end: 5px;
+  text-align: center;
 }
 
 .item_service .price .before_off {
@@ -713,10 +717,13 @@ img {
   font-weight: 900;
   color: #a9583f;
   font-size: 12px;
-  letter-spacing: 2px;
 }
 
-.starts span:last-child:after {
+html[dir="rtl"] .starts span:first-child:after {
+  color: #c88c69;
+}
+
+html[dir="ltr"] .starts span:last-child:after {
   color: #c88c69;
 }
 
@@ -737,6 +744,15 @@ img {
   .testimonial_p {
     width: auto;
     height: auto;
+  }
+  .testimonials_section {
+    margin-bottom: 50px;
+  }
+  .testimonials_section .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 10px;
+  }
+  .testimonials {
+    padding-bottom: 50px;
   }
 }
 
@@ -916,7 +932,7 @@ header {
   background-color: #fbd7bf;
   -webkit-box-shadow: 0px 0px 5px 0px #0000001a;
           box-shadow: 0px 0px 5px 0px #0000001a;
-  padding: 20px 15px;
+  padding: 10px;
   min-width: 140px;
   border-radius: 8px;
   text-align: center;
@@ -962,7 +978,7 @@ nav .ul_nav {
 }
 
 nav .ul_nav li {
-  padding: 0 15px;
+  padding: 0 25px;
 }
 
 nav .ul_nav .anc_nav {
@@ -1211,7 +1227,7 @@ nav .ul_nav .anc_nav:hover {
 }
 
 .input_newsletter .btn_newsletter:hover {
-  background-color: #a9583f;
+  background-color: #c88c69;
   color: #ffffff;
 }
 
@@ -1363,11 +1379,16 @@ nav .ul_nav .anc_nav:hover {
         flex-wrap: wrap;
     margin-bottom: 20px;
   }
+  .copyrights .payments-img {
+    margin: 0 auto 20px;
+  }
   .copyrights figure {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
   }
   .copyrights P {
     width: 100%;
