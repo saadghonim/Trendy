@@ -66,6 +66,9 @@ header {
   .user_item {
     margin-inline-start: 20px;
     @include flex-var(flex, center, center);
+    p {
+      margin-inline-end: 3px;
+    }
   }
 }
 .hover_drop {

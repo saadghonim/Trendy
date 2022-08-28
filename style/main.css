@@ -169,7 +169,7 @@ img {
   cursor: pointer;
   -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 20;
 }
 
@@ -270,7 +270,7 @@ img {
 }
 
 .banner {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .anc_banner {
@@ -342,6 +342,9 @@ img {
   }
   .banner {
     margin-bottom: 15px;
+  }
+  .banner-s {
+    margin-bottom: 40px;
   }
 }
 
@@ -537,10 +540,10 @@ img {
   font-weight: 700;
   border-radius: 10px;
   line-height: 1.9;
+  padding: 0 8px;
 }
 
 .item_service .lables .lable_off {
-  width: 64px;
   height: 20px;
   background-color: #f42424;
   -webkit-margin-end: 5px;
@@ -548,7 +551,6 @@ img {
 }
 
 .item_service .lables .lable_new {
-  width: 40px;
   height: 20px;
   background-color: #21ac31;
 }
@@ -880,6 +882,11 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.user_group .user_item p {
+  -webkit-margin-end: 3px;
+          margin-inline-end: 3px;
 }
 
 .hover_drop {
