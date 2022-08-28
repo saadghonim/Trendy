@@ -1006,7 +1006,7 @@ nav .ul_nav .anc_nav:hover {
 
 .search_mob {
   display: none;
-  position: absolute;
+  position: fixed;
   inset: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
