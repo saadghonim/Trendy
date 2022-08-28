@@ -113,6 +113,9 @@
       border-radius: 10px;
       line-height: 1.9;
       padding: 0 8px;
+      @include en {
+        line-height: 2;
+      }
     }
     .lable_off {
       height: 20px;

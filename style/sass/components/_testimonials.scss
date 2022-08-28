@@ -33,26 +33,19 @@
   margin-bottom: 20px;
   span {
     text-align: start;
-    &:after {
+    display: inline-block;
+    &::before {
       content: "";
       font-family: "line awesome free";
       font-weight: 900;
-      color: $color_4;
+      color: $color_3;
+
       font-size: 12px;
     }
-    @include ar {
-      &:first-child {
-        &:after {
-          color: $color_3;
-        }
-      }
-    }
-    @include en {
-      &:last-child {
-        &:after {
-          color: $color_3;
-        }
-      }
+  }
+  span.active {
+    &::before {
+      color: $color_4;
     }
   }
 }

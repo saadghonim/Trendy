@@ -543,6 +543,11 @@ img {
   padding: 0 8px;
 }
 
+html[dir="ltr"] .item_service .lables .lable_off, html[dir="ltr"]
+.item_service .lables .lable_new {
+  line-height: 2;
+}
+
 .item_service .lables .lable_off {
   height: 20px;
   background-color: #f42424;
@@ -711,22 +716,19 @@ img {
 
 .starts span {
   text-align: start;
+  display: inline-block;
 }
 
-.starts span:after {
+.starts span::before {
   content: "";
   font-family: "line awesome free";
   font-weight: 900;
-  color: #a9583f;
+  color: #c88c69;
   font-size: 12px;
 }
 
-html[dir="rtl"] .starts span:first-child:after {
-  color: #c88c69;
-}
-
-html[dir="ltr"] .starts span:last-child:after {
-  color: #c88c69;
+.starts span.active::before {
+  color: #a9583f;
 }
 
 .testimonial_p {
